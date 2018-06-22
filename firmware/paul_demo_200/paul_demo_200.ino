@@ -193,10 +193,14 @@ void loop() {
     digitalWrite(Pin_RED_LED, LED_ON);
     changeimage();
     Serial.println("LED on...");
+    Serial.print("STATE: ");
+    Serial.println(STATE);
     delay(5000);
     digitalWrite(Pin_RED_LED, LED_OFF);
     changeimage();
     Serial.println("LED off...");
+    Serial.print("STATE: ");
+    Serial.println(STATE);
     delay(5000);  
 }
 
