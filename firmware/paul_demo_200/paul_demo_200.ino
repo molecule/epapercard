@@ -220,7 +220,7 @@ void setup() {
 }
 
 
-static int state = 1;
+static int STATE = 1;
 
 
 // main loop
@@ -261,7 +261,7 @@ void changeimage(){
   EPD.setFactor(temperature); // adjust for current temperature
 
   int delay_counts = 0;
-  switch(state) {
+  switch(STATE) {
   default:
 //  case 0:         // clear the screen
 //    EPD.clear();
@@ -277,7 +277,7 @@ void changeimage(){
 #else
 #error "unsupported image function"
 #endif
-    ++state;
+    ++STATE;
     break;
 
   case 2:         // text -> picture
@@ -288,7 +288,7 @@ void changeimage(){
 #else
 #error "unsupported image function"
 #endif
-    ++state;
+    ++STATE;
     break;
 
   case 3:        // picture -> text
@@ -299,7 +299,7 @@ void changeimage(){
 #else
 #error "unsupported image function"
 #endif
-    state = 2;  // back to picture next time
+    STATE = 2;  // back to picture next time
     break;
   }
   EPD.end();   // power down the EPD panel  
