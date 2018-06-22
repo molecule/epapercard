@@ -237,7 +237,7 @@ void loop() {
 
 void changeimage(){
   //int temperature = S5813A.read();
-        int temperature = 40;
+  int temperature = 40;
 //  Serial.print("Temperature = ");
 //  Serial.print(temperature, DEC);
 //  Serial.println(" Celsius");
