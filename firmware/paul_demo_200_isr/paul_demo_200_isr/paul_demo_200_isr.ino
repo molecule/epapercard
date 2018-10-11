@@ -40,9 +40,9 @@
 
 
 // select two images from:  text_image text-hello cat aphrodite venus saturn
-#define IMAGE_1  xsaturn
-#define IMAGE_2  prev
-#define IMAGE_3  font
+#define IMAGE_1  cat
+#define IMAGE_2  puppy
+#define IMAGE_3  venus
 #define IMAGE_4  x2saturn
 
 // Error message for MSP430
