@@ -1,5 +1,7 @@
 # For PCBs designed using KiCAD: http://www.kicad-pcb.org/
 .DS_Store
+.pioenvs
+.vscode
 
 # Temporary files
 *.000
